@@ -1,0 +1,185 @@
+python run_search.py -mhcd Documents/GitHub/AIND-Planning/
+]133;C;]1337;RemoteHost=i077725@ZZZM56589936A]1337;CurrentDir=/Users/i077725/Documents/GitHub/AIND-Planning]133;D;0]133;AZZZM56589936A:AIND-Planning i077725$ ]133;Bcd Documents/GitHub/AIND-Planning/[11Ppython run_search.py -m
+]133;C;
+Select from the following list of air cargo problems. You may choose more than
+one by entering multiple selections separated by spaces.
+
+    1. Air Cargo Problem 1
+    2. Air Cargo Problem 2
+    3. Air Cargo Problem 3
+> 1 2 3
+
+Select from the following list of search functions. You may choose more than
+one by entering multiple selections separated by spaces.
+
+    1. breadth_first_search 
+    2. breadth_first_tree_search 
+    3. depth_first_graph_search 
+    4. depth_limited_search 
+    5. uniform_cost_search 
+    6. recursive_best_first_search h_1
+    7. greedy_best_first_graph_search h_1
+    8. astar_search h_1
+    9. astar_search h_ignore_preconditions
+    10. astar_search h_pg_levelsum
+> 1 2 3 4 5
+
+Solving Air Cargo Problem 1 using breadth_first_search...
+
+Expansions   Goal Tests   New Nodes
+    43          56         180    
+
+Plan length: 6  Time elapsed in seconds: 0.038053082000260474
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 1 using breadth_first_tree_search...
+
+Expansions   Goal Tests   New Nodes
+   1458        1459        5960   
+
+Plan length: 6  Time elapsed in seconds: 1.0444057810000231
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 1 using depth_first_graph_search...
+
+Expansions   Goal Tests   New Nodes
+    12          13          48    
+
+Plan length: 12  Time elapsed in seconds: 0.008495037000102457
+Fly(P1, SFO, JFK)
+Fly(P2, JFK, SFO)
+Load(C1, P2, SFO)
+Fly(P2, SFO, JFK)
+Fly(P1, JFK, SFO)
+Unload(C1, P2, JFK)
+Fly(P2, JFK, SFO)
+Fly(P1, SFO, JFK)
+Load(C2, P1, JFK)
+Fly(P2, SFO, JFK)
+Fly(P1, JFK, SFO)
+Unload(C2, P1, SFO)
+
+
+Solving Air Cargo Problem 1 using depth_limited_search...
+
+Expansions   Goal Tests   New Nodes
+   101         271         414    
+
+Plan length: 50  Time elapsed in seconds: 0.10154802800025209
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Unload(C1, P1, SFO)
+Load(C1, P1, SFO)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 1 using uniform_cost_search...
+
+Expansions   Goal Tests   New Nodes
+    55          57         224    
+
+Plan length: 6  Time elapsed in seconds: 0.0580629059986677
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Fly(P1, SFO, JFK)
+Fly(P2, JFK, SFO)
+Unload(C1, P1, JFK)
+Unload(C2, P2, SFO)
+
+
+Solving Air Cargo Problem 2 using breadth_first_search...
+
+Expansions   Goal Tests   New Nodes
+   3343        4609       30509   
+
+Plan length: 9  Time elapsed in seconds: 8.929903310001464
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Load(C3, P3, ATL)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+Fly(P3, ATL, SFO)
+Unload(C3, P3, SFO)
+
+
+Solving Air Cargo Problem 2 using breadth_first_tree_search...
+^CTraceback (most recent call last):
+  File "run_search.py", line 127, in <module>
+    manual()
+  File "run_search.py", line 79, in manual
+    main(p_choices, s_choices)
+  File "run_search.py", line 101, in main
+    run_search(_p, s, _h)
+  File "run_search.py", line 59, in run_search
+    node = search_function(ip)
+  File "/Users/i077725/Documents/GitHub/AIND-Planning/aimacode/search.py", line 168, in breadth_first_tree_search
+    return tree_search(problem, FIFOQueue())
+  File "/Users/i077725/Documents/GitHub/AIND-Planning/aimacode/search.py", line 145, in tree_search
+    frontier.extend(node.expand(problem))
+  File "/Users/i077725/Documents/GitHub/AIND-Planning/aimacode/search.py", line 100, in expand
+    for action in problem.actions(self.state)]
+  File "/Users/i077725/Documents/GitHub/AIND-Planning/aimacode/search.py", line 329, in actions
+    return self.problem.actions(state)
+  File "/Users/i077725/Documents/GitHub/AIND-Planning/my_air_cargo_problems.py", line 151, in actions
+    for clause in action.precond_neg:
+KeyboardInterrupt
+]1337;RemoteHost=i077725@ZZZM56589936A]1337;CurrentDir=/Users/i077725/Documents/GitHub/AIND-Planning]133;D;1]133;AZZZM56589936A:AIND-Planning i077725$ ]133;B
